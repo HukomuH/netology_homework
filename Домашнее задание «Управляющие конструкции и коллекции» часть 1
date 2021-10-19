@@ -14,3 +14,17 @@ while loop_number != 0:
     loop_number = int(input("Введите число: "))
     number += loop_number
 print("Результат: " + str(number))
+
+#Задание 3
+boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
+girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+
+if len(boys) != len(girls):
+    print("Результат: ", "\n", "Внимание, кто-то может остаться без пары!")
+else:
+    print("Результат:")
+    print()
+    print("Идеальные пары:")
+    result = list(zip(sorted(boys), sorted(girls)))
+    for boy, girl in result:
+        print(boy, " и ", girl)
