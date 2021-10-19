@@ -1,0 +1,7 @@
+#Задание 1
+slovo = input("Введите слово ")
+slovo_len = len(slovo)
+if slovo_len % 2 > 0:    
+    print(slovo[slovo_len // 2])
+else:
+    print(slovo[(slovo_len // 2 - 1):(slovo_len // 2 + 1)])
