@@ -5,3 +5,12 @@ if slovo_len % 2 > 0:
     print(slovo[slovo_len // 2])
 else:
     print(slovo[(slovo_len // 2 - 1):(slovo_len // 2 + 1)])
+    
+#Задание 2
+number = 0
+loop_number = int(input("Введите число: "))
+number += loop_number
+while loop_number != 0:
+    loop_number = int(input("Введите число: "))
+    number += loop_number
+print("Результат: " + str(number))
