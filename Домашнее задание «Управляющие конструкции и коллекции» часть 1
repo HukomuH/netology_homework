@@ -40,3 +40,19 @@ print('Средняя температура в странах:')
 for country, temp in countries_temperature:
     avg_temp = sum(temp)/len(temp)-32
     print(country + ' - ' + str(round(avg_temp, 1)) + ' C')
+    
+#Задание 5    
+ stream = [
+'2018-01-01,user100,150',
+'2018-01-07,user99,205',
+'2018-03-29,user1001,81'
+]
+watch_sum = 0
+user_list = []
+log = [date.split(',') for date in stream]
+for date, user, watch in log:
+    watch_sum += int(watch)
+    user_list.append(user)
+print('Среднее количество просмотров на уникального пользователя: ' + str(round(watch_sum/len(set(user_list)),2)))
+    
+    
