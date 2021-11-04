@@ -54,5 +54,15 @@ for date, user, watch in log:
     watch_sum += int(watch)
     user_list.append(user)
 print('Среднее количество просмотров на уникального пользователя: ' + str(round(watch_sum/len(set(user_list)),2)))
-    
-    
+
+#Задание 6
+inp_str = input('Введите числа:')
+num_lst = inp_str.split(' ')
+count_lst = []
+double_lst = []
+for num in num_lst:
+    if num in count_lst:
+        double_lst.append(num)
+    count_lst.append(num)
+print('Результат:')
+print(' '.join([str(y) for y in sorted(set(double_lst))]))    
